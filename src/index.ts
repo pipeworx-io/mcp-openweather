@@ -706,7 +706,7 @@ const tools: McpToolExport['tools'] = [
   {
     name: 'current_weather',
     description:
-      'Get the current weather for a city or coordinates: temperature, "feels like", conditions, humidity, wind speed, and cloud cover. Example: current_weather({ city: "London", units: "metric" })',
+      'Current conditions from OpenWeather (OpenWeatherMap) for a city or coordinates: temperature, "feels like", conditions, humidity, wind speed, and cloud cover, in metric or imperial units. Example: current_weather({ city: "London", units: "metric" })',
     inputSchema: {
       type: 'object' as const,
       properties: {
