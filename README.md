@@ -8,7 +8,7 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 
 | Tool | Description |
 |------|-------------|
-| `current_weather` | Current conditions from OpenWeather (OpenWeatherMap) for a city or coordinates: temperature, "feels like", conditions, humidity, wind speed, and cloud cover, in metric or imperial units. Example: current_weather({ city: "London", units: "metric" }) |
+| `current_weather` | Get the current weather for a city or coordinates: temperature, "feels like", conditions, humidity, wind speed, and cloud cover. Example: current_weather({ city: "London", units: "metric" }) |
 | `forecast` | Get a multi-step weather forecast (3-hour intervals) for a city or coordinates: temperature, conditions, wind speed, and precipitation probability over time. Example: forecast({ city: "Tokyo", count: 8 }) |
 | `air_quality` | Get the current air quality for a set of coordinates: an air quality index (AQI, 1=Good to 5=Very Poor) plus pollutant component concentrations (CO, NO2, O3, PM2.5, PM10, etc.). Example: air_quality({ lat: 51.5, lon: -0.12 }) |
 | `geocode` | Resolve a place name (city, optionally with state/country) to geographic coordinates (latitude/longitude). Useful before calling air_quality, which needs lat/lon. Example: geocode({ query: "Paris", limit: 5 }) |
